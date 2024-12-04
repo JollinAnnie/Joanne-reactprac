@@ -29,7 +29,7 @@ const Navbar = () => {
 
             <li>
               <Link to="skills" smooth spy offset={-80} className="menu-item">
-                Skills
+                Family
               </Link>
             </li>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
                 offset={-80}
                 className="menu-item"
               >
-                Work Experience
+                Education
               </Link>
             </li>
 
@@ -63,7 +63,7 @@ const Navbar = () => {
       <div className="p-3 fixed top-0 right-0 z-50">
         <button
           onClick={toggleMenu}
-          className="w-11 h-11 text-2xl text-sky-300 bg-blue-800/40 border border-sky-900/80 backdrop-blur-lg flex items-center justify-center rounded md:hidden z-50 ml-auto"
+          className="w-11 h-11 text-2xl text-yellow-300 bg-yellow-800/40 border border-yellow-900/80 backdrop-blur-lg flex items-center justify-center rounded md:hidden z-50 ml-auto"
         >
           {isMenuOpen ? <RiCloseFill /> : <CgMenuMotion />}
         </button>

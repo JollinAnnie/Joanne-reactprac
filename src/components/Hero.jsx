@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { PROFILE_DATA } from "../utils/data";
 
-import PROFILE_PIC from "../assets/Temporary_Profile.jpg";
+import PROFILE_PIC from "../assets/profile2.jpg";
 
 const Hero = () => {
   const {
@@ -26,7 +26,6 @@ const Hero = () => {
     >
       <div className="flex-1 text-center md:text-left z-[1]">
         <span className="text-xs md:text-sm text-black font-thin">
-          A Bubble.io Developer
         </span>
 
         <h2 className="text-3xl mt-3 md:text-5xl text-black md:mt-5">{name}</h2>
@@ -82,19 +81,19 @@ const Hero = () => {
           <div className="bg-blue-800/30 p-2 rounded">
           <div className="flex justify-center items-center gap-4 flex-wrap text-black">
           
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/JollinAnnie" target="_blank" rel="noopener noreferrer">
             <div className="bg-blue-800/30 p-2 rounded">
               <FaGithub className="text-lg md:text-xl" />
             </div>
           </a>
 
-          <a href="https://www.linkedin.com/in/altheae-owe/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/joanne-faith-cabarde-375202291/" target="_blank" rel="noopener noreferrer">
             <div className="bg-blue-800/30 p-2 rounded">
               <FaLinkedin size={20} />
             </div>
           </a>
 
-          <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/MaizeQuinn" target="_blank" rel="noopener noreferrer">
             <div className="bg-blue-800/30 p-2 rounded">
               <FaXTwitter size={20} />
             </div>

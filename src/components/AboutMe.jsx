@@ -1,7 +1,7 @@
 import React from "react";
 import { ABOUT_ME_DATA } from "../utils/data";
 
-import PROFILE_PIC from "../assets/Temporary_Profile.jpg";
+import PROFILE_PIC from "../assets/profile.jpg";
 
 const AboutMe = () => {
   return (
@@ -13,7 +13,7 @@ const AboutMe = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4">
         <img className="w-full h-80 object-cover rounded-lg mb-4 md:mb-0" src={PROFILE_PIC} alt="profile pic" />
 
-        <div className="col-span-2 bg-gradient-to-br from-blue-950 to-slate-900 rounded-lg border border-blue-800/40 p-6">
+        <div className="col-span-2 bg-gradient-to-br from-yellow-950 to-slate-900 rounded-lg border border-yellow-800/40 p-6">
           <p className="text-blue-50 text-xs md:text-[13px] font-normal text-justify leading-6">
             {ABOUT_ME_DATA.introduction} {ABOUT_ME_DATA.background}{" "}
             {ABOUT_ME_DATA.interests}
@@ -26,30 +26,13 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
-        <InfoCard
-          count={ABOUT_ME_DATA.stats.yearsOfExperience}
-          lable="Years of Experience"
-        />
-
-        <InfoCard
-          count={ABOUT_ME_DATA.stats.numberOfProjects}
-          lable="Projects Completed Successfully"
-        />
-
-        <InfoCard
-          count={ABOUT_ME_DATA.stats.certificationsEarned}
-          lable="Certifications Earned"
-        />
-      </div>
     </section>
   );
 };
 
 const InfoCard = ({ lable, count }) => {
   return (
-    <div className="bg-gradient-to-br from-blue-950 to-slate-900 rounded-lg border border-blue-800/40 px-4 md:px-6 py-3">
+    <div className="bg-gradient-to-br from-amber-200 to-slate-900 rounded-lg border border-amber-200/40 px-4 md:px-6 py-3">
       <h6 className="text-primary text-xl md:text-2xl font-semibold">
         {count}
       </h6>
